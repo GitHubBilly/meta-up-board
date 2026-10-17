@@ -5,7 +5,10 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=12f884d2ae1ff87c09e5b7ccc2c4ca7e"
 
 SRCREV = "d626a5eef494cefb7cc0517965ba2e332fe86b3f"
 PV = "1.1.9+git${SRCPV}"
-SRC_URI = "git://github.com/up-division/pinctrl-upboard.git;protocol=https;branch=master"
+# Equivalent to git@github.com:up-division/pinctrl-upboard.git (bitbake ssh form).
+# Upstream master does not yet include UPN-WCL01 HAT/PWM deltas; those remain
+# tracked outside this recipe until a newer tagged release is available.
+SRC_URI = "git://github.com/up-division/pinctrl-upboard.git;protocol=ssh;user=git;branch=master"
 
 # NOTE: upstream commit ce2276b ("add kernel 6.17 compatibility for
 # gpio_chip .set callback", included since v1.1.9) already fixes the
