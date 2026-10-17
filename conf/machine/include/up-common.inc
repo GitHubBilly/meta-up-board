@@ -30,7 +30,11 @@ GLIBC_ADDONS = "nptl"
 
 SERIAL_CONSOLES = "115200;ttyS0"
 
-IMAGE_FSTYPES += " hddimg"
+# Primary flashable artifacts for CI / whole-disk install (align Louis
+# wcl_wrynose). Prefer wic + bmaptool map over legacy hddimg live images.
+# WKS_FILE below already defines EFI bootdisk layout. USB live (hddimg) is
+# optional via local IMAGE_FSTYPES:append if needed; not the default.
+IMAGE_FSTYPES += " wic wic.bmap"
 
 IMAGE_INSTALL:append = " kernel-module-upboard-fpga kernel-module-upboard-ec kernel-module-leds-upboard kernel-module-pinctrl-upboard kernel-module-pinctrl-upelement kernel-module-pwm-upboard kernel-module-spi-pxa2xx-up"
 
