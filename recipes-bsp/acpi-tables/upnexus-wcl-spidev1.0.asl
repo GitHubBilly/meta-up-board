@@ -1,10 +1,6 @@
 /*
- * UP Nexus WCL (Wildcat Lake): spidev on SPI0 CS0.
- *
- * Content matches pc00.spi0.spidev1.0.asl (up-xtreme-i14 path \_SB.PC00.SPI0,
- * Shared). Kept as a board-specific file so future i14 SPI changes do not
- * silently affect WCL. Verified on hardware 2026-10-12: /dev/spidev0.0.
- * DSDT evidence: docs/up-nexus-wcl/ (BIOS exposes \_SB.PC00.SPI0).
+ * UP Nexus WCL: spidev on SPI0 CS0 (path \_SB.PC00.SPI0).
+ * Separate from i14 ASL so board SPI changes stay independent.
  */
 DefinitionBlock ("", "SSDT", 5, "INTEL", "SPIDEV0", 0x00000001)
 {

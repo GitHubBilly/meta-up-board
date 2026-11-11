@@ -37,9 +37,7 @@ do_shared_workdir:append () {
 	fi
 }
 
-# UP Nexus WCL (Wildcat Lake) — ported from Louis wcl_wrynose enablement.
-# Prefer cfg fragments over do_configure:append so merge/defconfig stay auditable.
-# G7 PINCTRL_UPBOARD*/PINCTRL_INTEL_PLATFORM already covered by shared fragments.
+# UP Nexus WCL: Xe3 display + disable SoundWire SOF (link modpost failures).
 SRC_URI:append:up-nexus-wcl = " \
     file://xe3.cfg \
     file://wcl-soundwire-off.cfg \

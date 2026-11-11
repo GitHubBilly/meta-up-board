@@ -30,8 +30,7 @@ GLIBC_ADDONS = "nptl"
 
 SERIAL_CONSOLES = "115200;ttyS0"
 
-# Primary flashable artifacts for CI / whole-disk install (align Louis
-# wcl_wrynose). Prefer wic + bmaptool map over legacy hddimg live images.
+# Default flashable image: wic (+ bmap). Prefer over legacy hddimg.
 # WKS_FILE below already defines EFI bootdisk layout. USB live (hddimg) is
 # optional via local IMAGE_FSTYPES:append if needed; not the default.
 IMAGE_FSTYPES += " wic wic.bmap"
