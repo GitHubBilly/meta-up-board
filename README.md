@@ -32,6 +32,7 @@ For product information, see http://up-board.org
 | UP Xtreme i11       | up-xtreme-i11                       |
 | UP Xtreme i12       | up-xtreme-i12, up-xtreme-i12-rt     |
 | UP Xtreme i14       | up-xtreme-i14, up-xtreme-i14-rt     |
+| UP Xtreme ARL       | up-xtreme-arl, up-xtreme-arl-rt     |
 | UP Nexus WCL        | up-nexus-wcl                        |
 
 ## Build an image

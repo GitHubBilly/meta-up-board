@@ -42,3 +42,11 @@ SRC_URI:append:up-nexus-wcl = " \
     file://xe3.cfg \
     file://wcl-soundwire-off.cfg \
 "
+
+# UP Xtreme ARL: Arc graphics via DRM_XE (verified on live UPX-ARL01).
+SRC_URI:append:up-xtreme-arl = " \
+    file://arl-xe.cfg \
+"
+SRC_URI:append:up-xtreme-arl-rt = " \
+    file://arl-xe.cfg \
+"

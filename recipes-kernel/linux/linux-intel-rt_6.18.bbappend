@@ -12,6 +12,11 @@ SRC_URI += " \
        file://wireless.cfg \
        file://up-board-pinctrl.cfg \
 "
+
+# UP Xtreme ARL RT: Arc graphics via DRM_XE.
+SRC_URI:append:up-xtreme-arl-rt = " \
+    file://arl-xe.cfg \
+"
 # replace these SRCREVs with the real commit ids once you've had
 # the appropriate changes committed to the upstream linux-yocto repo
 # SRCREV_machine_pn-linux-yocto_up-board ?= "${AUTOREV}"
