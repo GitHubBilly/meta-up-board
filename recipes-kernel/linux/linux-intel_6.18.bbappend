@@ -50,3 +50,11 @@ SRC_URI:append:up-xtreme-arl = " \
 SRC_URI:append:up-xtreme-arl-rt = " \
     file://arl-xe.cfg \
 "
+
+# UP Xtreme PTL: Xe3 / DRM_XE display (verified on live UPX-PTL01-SYS).
+SRC_URI:append:up-xtreme-ptl = " \
+    file://ptl-xe.cfg \
+"
+SRC_URI:append:up-xtreme-ptl-rt = " \
+    file://ptl-xe.cfg \
+"
